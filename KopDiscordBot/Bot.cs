@@ -220,7 +220,7 @@ namespace KopDiscordBot
 
         private async Task _socketClient_UserJoined ( SocketGuildUser user )
         {
-            var channel = (SocketTextChannel) _socketClient.GetChannel ( 716941878213476417 );
+            var channel = (SocketTextChannel) _socketClient.GetChannel ( 0 );
             if ( channel == null ) return;
 
             if ( user.Username.ToLowerInvariant ( ) == "memory" )
